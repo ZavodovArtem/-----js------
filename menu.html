@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КомуЧё</title>
+
+     <!-- Подключение стилей -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/style.css">
+ 
+     <!-- Подключение шрифтов -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__phone">
+                <a href="index.html"><img class="header__phone--logo" src="images/logo-phone.svg" alt=""></a>
+                <a class="header__phone--menu"  href="menu.html">Меню</a>
+                <p class="header__phone--adress" > <span class="header__phone--time">С 9:00 до 22:00 </span> <br> Улица Ванеева 25/88 <br> <span class="header__phone--number">+7 (987) 087-25-88</span></p>
+                <a href="update.html"><img class="header__phone--basket"  src="images/basket-phone.svg" alt=""></a>
+            </div>
+            <div class="header__pc">
+                <a href="index.html"><img src="images/komycho-logo-pc.svg" alt=""></a>
+                <nav class="header__navigation">
+                    <ul class="header__list">
+                        <li class="header__list--point"><a href="menu.html">Меню</a></li>
+                        <li class="header__list--point"><a href="us.html">О нас</a></li>
+                        <li class="header__list--point"><a href="delivery.html">Доставка</a></li>
+                        <li class="header__list--point"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <p class="header__p"><span class="header__p--time">С 9:00 до 22:00</span> <br> Улица Ванеева 25/88</p>
+                <p class="header__p">+7 (987) 087-25-88</p>
+                <a href="update.html"><img class="header__basket" src="images/basket.svg" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <section class="menu">
+        <div class="container">
+            <div class="menu__name menu__name-phone">
+                <p class="menu__name--p">Меню</p>
+            </div>
+
+            <div class="tabs">
+                <ul class="tab-header">
+                    <li class="tab-header__item tab-header__item--font js-tab-trigger active" data-tab="1"><img class="tab-header__svg" src="images/sha.svg" alt=""><span class="tab-header__span">Шаурма</span></li>
+                    <li class="tab-header__item tab-header__item--font js-tab-trigger" data-tab="2"><img class="tab-header__svg" src="images/hot.svg" alt=""><span class="tab-header__span">Хот-Дог</span></li>
+                    <li class="tab-header__item tab-header__item--font js-tab-trigger" data-tab="3"><img class="tab-header__svg" src="images/gamb.svg" alt=""><span class="tab-header__span">Сэндвич</span></li>
+                    <li class="tab-header__item tab-header__item--font js-tab-trigger" data-tab="4"><img class="tab-header__svg" src="images/coffe.svg" alt=""><span class="tab-header__span">Кофе</span></li>
+                    <li class="tab-header__item tab-header__item--font js-tab-trigger" data-tab="5"><img class="tab-header__svg" src="images/tea.svg" alt=""> <span class="tab-header__span">Чай</span></li>
+                    <li class="tab-header__item tab-header__item--font js-tab-trigger" data-tab="6"><img class="tab-header__svg" src="images/milk.svg" alt=""> <span class="tab-header__span">Коктейли</span></li>
+                </ul>
+                    <ul class="tab-content">
+                        <li class="tab-content__item js-tab-content active" data-tab="1">
+                            <div class="menu__content">
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Шаурма со свининой</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Свинина, соус, капуста, томаты, огурцы, морковь <br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 190 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/img-sha.svg" alt="">
+                                </div>
+                                                 
+                        
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Шаурма с курицей</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Курица, соус, капуста, томаты, огурцы, морковь <br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 180 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/sha-chiken.svg" alt="">
+                                </div>
+                            
+                        
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Шаурма Прованс</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Грибы Шампиньоны, соус, капуста, томаты, огурцы, морковь, руккола <br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 190 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/sha-provans.svg" alt="">
+                                </div>
+
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Шаурма два мяса</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Свинина, курица, соус, капуста, томаты, огурцы, морковь <br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 270 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/sha-twomeat.svg" alt="">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-content__item js-tab-content" data-tab="2">
+                            <div class="menu__content">
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Хот-Дог</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Булочка, сосиска, лук фри, огурцы маринованные, горчица, кетчуп<br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 130 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/hot-dog.svg" alt="">
+                                </div>  
+                            </div>               
+                        </li>
+                        <li class="tab-content__item js-tab-content" data-tab="3">
+                            <div class="menu__content">
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Сэндвич со свининой</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Свинина, соус, сыр моцарелла, томаты, тесто <br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 190 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/send-svin.svg" alt="">
+                                </div>
+                            
+
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Сэндвич с курицей</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Курица, сыр моцарелла соус, томаты, тесто<br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 180 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/send-chiken.svg" alt="">
+                                </div>
+
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Сэндвич Прованс</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Шампиньоны, соус, сыр Моцарелла, томаты, тесто, руккола<br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 190 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/send-other.svg" alt="">
+                                </div>
+                    
+                    
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Сэндвич Жульен</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Курица, Шампиньоны, соус, сыр Моцарелла, тесто <br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 235 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/send-other.svg" alt="">
+                                </div>
+
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Сэндвич со скумбрией</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Скумбрия, соус, сыр Моцарелла, маринованный огурчик, морковь <br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 250 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/send-other.svg" alt="">
+                                </div>
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Сэндвич XL</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">Курица, Свинина, томаты, соус, сыр Моцарелла, тесто <br> 240 грамм</p>
+                                        <p class="menu__description-right menu__description-right--components"> 270 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/send-other.svg" alt="">
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="tab-content__item js-tab-content" data-tab="4">
+                            <div class="menu__content">
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Эспрессо</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components"> 50 мл <br> 100мл</p>
+                                        <p class="menu__description-right menu__description-right--components">    50 Р. <br> 100 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/espresso.svg" alt="">
+                                </div>
+                        
+                
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Американо</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 90 Р. <br> 120 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/americano.svg" alt="">
+                                </div>
+                    
+                    
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Капучино</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br> 140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/kapuchino.svg" alt="">
+                                </div>
+                            
+
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Латте</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br> 140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/latte.svg" alt="">
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="tab-content__item js-tab-content" data-tab="5">
+                            <div class="menu__content">
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Эспрессо</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components"> 50 мл <br> 100мл</p>
+                                        <p class="menu__description-right menu__description-right--components">    50 Р. <br> 100 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/espresso.svg" alt="">
+                                </div>
+                        
+                
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Латте</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br> 140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/latte.svg" alt="">
+                                </div>
+                    
+                    
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Капучино</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br> 140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/kapuchino.svg" alt="">
+                                </div>
+                            
+
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Черный чай</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 40 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/hot-shoko.svg" alt="">
+                                </div>
+
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Латте</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br> 140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/latte.svg" alt="">
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="tab-content__item js-tab-content" data-tab="6">
+                            <div class="menu__content">
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Горячий шоколад</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br>  140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/hot-shoko.svg" alt="">
+                                </div>
+                        
+                
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Латте</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br> 140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/latte.svg" alt="">
+                                </div>
+                    
+                    
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Горячий шоколад</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br>  140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/hot-shoko.svg" alt="">
+                                </div>
+                            
+
+                                <div class="menu__product">
+                                    <h3 class="menu__product-name menu__product--text" >Капучино</h3>
+                                    <div class="menu__description">
+                                        <p class="menu__description-left menu__description-left--components">200 мл <br> 300 мл</p>
+                                        <p class="menu__description-right menu__description-right--components"> 110 Р. <br> 140 Р.</p>
+                                    </div>
+                                    <img class="menu__product--img" src="images/kapuchino.svg" alt="">
+                                </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer border">
+        <div class="container">
+            <div class="footer__full-pc">
+                <a href="index.html"><img src="images/komycho-logo-pc.svg" alt=""></a>
+                <div class="footer__menu">
+                    <a href="menu.html">Меню</a>
+                    <a href="us.html">О нас</a>
+                    <a href="delivery.html">Доставка</a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="contacts.html">Контакты</a>
+                    <p>+7 (987) 087-25-88</p>
+                </div>
+                <div class="footer__adress">
+                    <a href="contacts.html">Адрес</a>
+                    <p>Улица Ванеева 25/88</p>
+                </div>
+                <div class="footer__other">
+                    <a href="">Отзывы</a>
+                    <a href="">Вакансии</a>
+                    <a href="">Сотрудничество</a>
+                </div>
+                <div class="footer__social">
+                    <img src="images/viber.svg" alt="">
+                    <img class="footer__social-img" src="images/vk.svg" alt="">
+                    <img class="footer__social-img"src="images/teleg.svg" alt="">
+                </div>
+            </div>
+            <div class="footer__full-phone">
+                <div class="footer__up">
+                    <a href="index.html"><img src="images/logo-phone.svg" alt=""></a>
+                    <div class="footer__social">
+                        <img src="images/viber.svg" alt="">
+                        <img class="footer__social-img" src="images/vk.svg" alt="">
+                        <img class="footer__social-img"src="images/teleg.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer__down">
+                    <div class="footer__menu">
+                        <a href="menu.html">Меню</a>
+                        <a href="us.html">О нас</a>
+                        <a href="delivery.html">Доставка</a>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="contacts.html">Контакты</a>
+                        <p class="footer__p-phone">+7 (987) 087-25-88</p>
+                    </div>
+                    <div class="footer__adress">
+                        <a href="contacts.html">Адрес</a>
+                        <p class="footer__p-phone">Улица Ванеева 25/88</p>
+                    </div>
+                    <div class="footer__other">
+                        <a href="update.html">Отзывы</a>
+                        <a href="update.html">Вакансии</a>
+                        <a href="update.html">Сотрудничество</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+</body>
+</html>
